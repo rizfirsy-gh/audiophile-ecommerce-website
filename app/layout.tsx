@@ -1,3 +1,4 @@
+import Navigation from "@/components/navigation/Navigation";
 import "./globals.css";
 import { Manrope } from "next/font/google";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Navigation />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
