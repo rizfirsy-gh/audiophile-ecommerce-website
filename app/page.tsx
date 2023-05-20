@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Button from "@/components/buttons/Button";
 
 export default function Home() {
   return (
     <main>
-      <p className="text-lamb">Hello Audiophile!</p>
+      <Button variant="primary">SEE PRODUCT</Button>
+      <Button variant="secondary">SEE PRODUCT</Button>
+      <Button variant="tertiary">shop</Button>
     </main>
   );
 }
