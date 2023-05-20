@@ -1,11 +1,9 @@
-import Button from "@/components/buttons/Button";
+import HomeScreen from "./HomeScreen";
 
 export default function Home() {
   return (
     <main>
-      <Button variant="primary">SEE PRODUCT</Button>
-      <Button variant="secondary">SEE PRODUCT</Button>
-      <Button variant="tertiary">shop</Button>
+      <HomeScreen />
     </main>
   );
 }
