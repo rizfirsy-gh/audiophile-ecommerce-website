@@ -68,7 +68,7 @@ const HomeScreen = () => {
         </div>
       </header>
       <section className="bg-white max-w-6xl my-0 mx-auto">
-        <div className="pt-10 pb-[120px] md:py-24 lg:py-36 px-4 md:px-0 flex flex-col md:flex-row w-full justify-center items-center gap-16 md:gap-2 lg:gap-7">
+        <div className="pt-10 pb-[120px] md:py-24 lg:py-36 px-4 md:px-0 flex flex-col md:flex-row w-full justify-center items-center gap-4 md:gap-2 lg:gap-7">
           {dummyCategories.map((category, index) => (
             <CategoriesCard
               key={index}
