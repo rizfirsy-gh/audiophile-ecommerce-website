@@ -26,14 +26,14 @@ const CategoriesCard: React.FC<{ image: any; productName: string }> = ({
   productName,
 }) => {
   return (
-    <div className="relative bg-light-gray w-full md:w-[223px] lg:w-[350px] h-40 lg:h-[204px] rounded-lg flex flex-col gap-4 justify-between  items-center pb-7">
-      <Image
-        src={image}
-        alt={productName}
-        className="object-contain absolute -translate-y-3/4 w-1/4"
-      />
-      <h6>{productName}</h6>
-      <Button variant="tertiary">shop</Button>
+    <div className="relative w-full md:w-[223px] lg:w-[350px] flex flex-col gap-8 justify-between items-center pb-8 before:bg-light-gray before:absolute before:left-0 before:right-0 before:bottom-0 before:rounded-lg before:h-[75%]">
+      <div className="relative before:-z-0 before:bg-black/40 before:absolute before:-bottom-5 before:rounded-[100%] before:w-20 before:left-1/2 before:-translate-x-1/2 before:h-8 before:blur-lg">
+        <Image src={image} alt={productName} />
+      </div>
+      <div className="flex flex-col justify-start items-center gap-4">
+        <h6 className="z-10">{productName}</h6>
+        <Button variant="tertiary">shop</Button>
+      </div>
     </div>
   );
 };
