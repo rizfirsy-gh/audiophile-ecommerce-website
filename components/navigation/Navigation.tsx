@@ -13,7 +13,7 @@ const Navigation = () => {
   const currentpath = usePathname();
 
   return (
-    <nav className="bg-dark-gray z-50">
+    <nav className="bg-dark-gray text-white z-50">
       <div
         id="navigation-container"
         className="relative py-9 px-4 xl:px-0 max-w-6xl mx-auto my-0 flex justify-between items-center border-b border-white/10"
