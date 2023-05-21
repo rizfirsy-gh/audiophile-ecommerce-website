@@ -15,7 +15,7 @@ const Button: React.FC<{
       );
     case "secondary":
       return (
-        <button className="w-fit font-bold bg-transparent border border-black py-4 px-8 uppercase text-black tracking-widest text-xs hover:bg-black hover:border-black">
+        <button className="w-fit font-bold bg-transparent border border-black py-4 px-8 uppercase text-black tracking-widest text-xs hover:bg-black hover:border-black hover:text-white">
           {children}
         </button>
       );

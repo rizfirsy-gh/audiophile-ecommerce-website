@@ -5,6 +5,7 @@ import xx99 from "@/public/header-home.png";
 import headphoneSmall from "@/public/images/small/headphone-small.png";
 import speakerSmall from "@/public/images/small/speaker-small.png";
 import earphoneSmall from "@/public/images/small/earphone-small.png";
+import zx9speaker from "@/public/images/big/ZX9 SPEAKER.png";
 
 const dummyCategories = [
   {
@@ -67,8 +68,8 @@ const HomeScreen = () => {
           </div>
         </div>
       </header>
-      <section className="bg-white max-w-6xl my-0 mx-auto">
-        <div className="pt-10 pb-[120px] md:py-24 lg:py-36 px-4 md:px-0 flex flex-col md:flex-row w-full justify-center items-center gap-4 md:gap-2 lg:gap-7">
+      <section className="bg-white">
+        <div className="max-w-6xl my-0 mx-auto pt-10 pb-[120px] md:py-24 lg:py-36 px-4 md:px-0 flex flex-col md:flex-row w-full justify-center items-center gap-4 md:gap-2 lg:gap-7">
           {dummyCategories.map((category, index) => (
             <CategoriesCard
               key={index}
@@ -76,6 +77,27 @@ const HomeScreen = () => {
               productName={category.productName}
             />
           ))}
+        </div>
+      </section>
+      <section className="px-4 md:px-10">
+        <div className="bg-lamb max-w-6xl my-0 mx-auto rounded-lg flex flex-col lg:flex-row justify-center items-center gap-32 overflow-hidden p-14 lg:p-0">
+          <div>
+            <Image
+              src={zx9speaker}
+              alt="zx9 speaker"
+              className="base:w-48 lg:max-w-[410px] translate-y-11"
+            />
+          </div>
+          <div className="max-w-[350px] flex flex-col justify-center items-center lg:block">
+            <div className="text-white flex flex-col gap-6 mb-10 text-center lg:text-left">
+              <h1>ZX9 speaker</h1>
+              <p>
+                Upgrade to premium speakers that are phenomenally built to
+                deliver truly remarkable sound.
+              </p>
+            </div>
+            <Button variant="secondary">see product</Button>
+          </div>
         </div>
       </section>
     </article>
